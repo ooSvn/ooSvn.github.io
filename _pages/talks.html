@@ -1,12 +1,193 @@
----
+<!-- ---
 layout: archive
-title: "Talks and presentations"
+title: "Prpjects"
 permalink: /talks/
 author_profile: true
 ---
 
 
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .project-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            margin-bottom: 30px;
+            padding: 20px;
+            transition: transform 0.2s; /* Add smooth transition for hover effect */
+        }
+
+        .project-container:hover {
+            transform: scale(1.05); /* Enlarge slightly on hover */
+        }
+
+        .project-container img {
+            max-width: 300px;
+            margin-right: 20px;
+            cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+        }
+
+        .project-container h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .project-container h2 {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .project-container p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .project-container .project-link {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .project-container {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: center;
+            }
+
+            .project-container img {
+                max-width: 100%;
+                margin-right: 0;
+            }
+        }
+
+        /* Add margin at the bottom of the page */
+        body::after {
+            content: "";
+            height: 200px; /* Adjust this value to control the margin size */
+            display: block;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            margin-top: 30px; /* Add margin at the top of the table */
+            margin-bottom: 30px; /* Add margin at the end of the table */
+        }
+
+        table, th, td {
+            border: 1px solid #666;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+        
+        /* Center-align the Table of Contents heading */
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Table of Contents</h2>
+    <table>
+        <tr>
+            <td><a href="#grapevine-leaves-classification">Grapevine Leaves Classification</a></td>
+            <td><a href="#histopathology-image-classification">Histopathology Image Classification</a></td>
+        </tr>
+        <tr>
+            <td><a href="#finding-vowels">Finding Vowels</a></td>
+            <td><a href="#parkinsons-disease-classification">Parkinson's Disease Classification</a></td>
+        </tr>
+        <tr>
+            <td><a href="#sentiment-analysis">Sentiment Analysis</a></td>
+            <td><a href="#travelling-salesman-problem">Travelling Salesman Problem</a></td>
+        </tr>
+        <tr>
+            <td><a href="#job-assigning-to-n-agents">Job Assigning to N Agents</a></td>
+            <td><a href="#cutting-stock-problem">Cutting Stock Problem</a></td>
+        </tr>
+        <tr>
+            <td><a href="#n-queens-puzzle">N Queens Puzzle</a></td>
+            <td><a href="#maze-solver-ai">Maze Solver AI</a></td>
+        </tr>
+        <tr>
+            <td><a href="#connect-four-game-ai">Connect Four Game AI</a></td>
+            <td><a href="#assembler-and-disassembler">Assembler and Disassembler</a></td>
+        </tr>
+        <tr>
+            <td><a href="#image-processing-using-assembly">Image Processing using Assembly</a></td>
+            <td><a href="#Neural-Networks-From-Scartch">Neural Networks From Scratch</a></td>
+        </tr>
+        <tr>
+            <td><a href="#Snake-Game">Snake Game</a></td>
+            <td><a href="#Semantic_Tableaux">Semantic Tableaux</a></td>
+        </tr>
+        <tr>
+            <td><a href="#MLP">MLP From Scratch</a></td>
+            <td><a href="#Scheduling_Algorithms">Scheduling Algorithms</a></td>
+        </tr>
+        <tr>
+            <td><a href="#Graph_traversal">Graph Traversal Methods</a></td>
+            <td><a href="#MorisManoBasicComputer">Moris Mano Basic Compute</a></td>
+        </tr>
+        <tr>
+            <td><a href="#House_Price_Prediction">House Price Prediction</a></td>
+            <td><a href="#Twitter">Simple Twitter</a></td>
+        </tr>
+        <tr>
+            <td colspan="2"><a href="#Titanic_Survival_Prediction">Titanic Survival Prediction</a></td>
+        </tr>
+    </table>
+
+
+    <div class="project-container project-hover" id="grapevine-leaves-classification" onclick="window.location.href='https://github.com/nargesbh/Grapevine-Leaves-Classification'">
+      <a href="https://github.com/nargesbh/Grapevine-Leaves-Classification" target="_blank">
+          <img src="https://raw.githubusercontent.com/nargesbh/nargesbh.github.io/master/_pages/leaves2-small.jpg" alt="Project Image" width="300">
+      </a>
+      <div>
+          <h1>Grapevine Leaves Classification</h1>
+          <p><strong>Project Date</strong>: July 2022</p>
+          <p><em>Data Mining Course's Project</em></p>
+          <p>This project is the final assignment for a data mining course. The primary objective is to classify grapevine leaves into five distinct classes using various deep learning models, including MobileNetV2, ResNet50, EfficientNetB3, and InceptionNetV3. The project also explores the impact of autoencoders on classification accuracy and employs 10-fold cross-validation as a performance metric.</p>
+          <p><strong>Libraries Used</strong>: tensorflow, keras, PIL, pandas, numpy, sklearn</p>
+          <p class="project-link"><a href="https://github.com/nargesbh/Grapevine-Leaves-Classification" target="_blank">GitHub Repository</a></p>
+      </div>
+  </div>
+
+ 
+
+
+
+ </body>
+ </html>
 
 
 <!-- {% if site.talkmap_link == true %}
@@ -18,4 +199,5 @@ author_profile: true
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
+ -->
  -->
